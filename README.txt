@@ -1,16 +1,19 @@
-StudyForge Website — version 1.0.1
+StudyForge PC — Website v1.0.2
 
-تم ضبط الموقع على البنية الجديدة بحيث تكون جميع الملفات الأساسية في نفس المجلد.
+Technical SEO update focused on:
+- semantic HTML and accessible headings
+- unique titles and meta descriptions
+- canonical URLs
+- robots meta directives
+- sitemap.xml and robots.txt
+- JSON-LD structured data
+- Open Graph / social metadata
+- performance-friendly deferred JavaScript and image dimensions
+- mobile and accessibility refinements
 
-التحديثات:
-- الإصدار الحالي: 1.0.1
-- الإصدارات السابقة: 1.0.0 مع إمكانية التنزيل
-- سبب تحديث 1.0.1 بالنص المطلوب فقط
-- تبديل العربية/الإنجليزية يعمل على جميع الصفحات مع حفظ الاختيار
-- عناوين الصفحات تتغير حسب اللغة
-- البريد studyforgepc@gmail.com يفتح تطبيق البريد عبر mailto:
-- أيقونة StudyForge مستخدمة كـ favicon وApple Touch Icon
-- رابط تحميل 1.0.1:
-  https://github.com/studyforgepc-design/StudyForge/releases/download/1.0.1/StudyForge.Setup.1.0.1.exe
-- رابط تحميل 1.0.0 الصحيح:
-  https://github.com/studyforgepc-design/StudyForge/releases/download/1.0.1/StudyForge.Setup.1.0.0.exe
+Current release: 1.0.1
+Previous release: 1.0.0
+
+Important:
+Keep the Google Search Console verification HTML file in the repository root when replacing website files.
+After publishing, submit https://studyforgepc-design.github.io/sitemap.xml in Google Search Console.
