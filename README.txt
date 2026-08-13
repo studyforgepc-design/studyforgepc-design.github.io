@@ -17,3 +17,6 @@ Previous release: 1.0.0
 Important:
 Keep the Google Search Console verification HTML file in the repository root when replacing website files.
 After publishing, submit https://studyforgepc-design.github.io/sitemap.xml in Google Search Console.
+
+Website version: 1.0.4
+Support: Vodafone Cash QR only
