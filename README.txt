@@ -1,22 +1,8 @@
-StudyForge PC — Website v1.0.2
+StudyForge PC
+برنامج Windows لتنظيم وتشغيل الكورسات التعليمية المحلية.
+الموقع: https://studyforgepc-design.github.io/
+آخر إصدار في التطبيق: 1.0.1
+نسخة الموقع: 1.0.5
 
-Technical SEO update focused on:
-- semantic HTML and accessible headings
-- unique titles and meta descriptions
-- canonical URLs
-- robots meta directives
-- sitemap.xml and robots.txt
-- JSON-LD structured data
-- Open Graph / social metadata
-- performance-friendly deferred JavaScript and image dimensions
-- mobile and accessibility refinements
 
-Current release: 1.0.1
-Previous release: 1.0.0
-
-Important:
-Keep the Google Search Console verification HTML file in the repository root when replacing website files.
-After publishing, submit https://studyforgepc-design.github.io/sitemap.xml in Google Search Console.
-
-Website version: 1.0.4
-Support: Vodafone Cash QR only
+Version 1.0.6: added Google Analytics (G-ZFQXR0F5W9) and retained Google Search Console verification meta tag.
