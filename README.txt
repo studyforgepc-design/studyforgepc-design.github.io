@@ -13,4 +13,4 @@ StudyForge Website — version 1.0.1
 - رابط تحميل 1.0.1:
   https://github.com/studyforgepc-design/StudyForge/releases/download/1.0.1/StudyForge.Setup.1.0.1.exe
 - رابط تحميل 1.0.0 الصحيح:
-  https://github.com/studyforgepc-design/StudyForge/releases/download/v2.0.0/StudyForge.Setup.1.0.0.exe
+  https://github.com/studyforgepc-design/StudyForge/releases/download/1.0.1/StudyForge.Setup.1.0.0.exe
