@@ -36,6 +36,7 @@
 <a href="updates.html" data-i18n="navUpdates">التحديثات</a>
 <a href="help.html" data-i18n="navHelp">المساعدة</a>
 </nav>
+<button id="supportBtn" class="support-btn" type="button" data-i18n="supportButton">دعم StudyForge</button>
 <button id="lang" class="lang" type="button">EN</button>
 </header>
 <main class="page">
@@ -68,6 +69,37 @@
 </div>
 </section>
 </main>
+<div id="supportModal" class="modal" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="supportModalTitle">
+  <div class="modal-backdrop" data-close-support></div>
+  <div class="support-modal" role="document">
+    <div class="support-modal-head">
+      <div>
+        <span class="support-kicker" data-i18n="supportKicker">دعم StudyForge</span>
+        <h2 id="supportModalTitle" data-i18n="supportModalTitle">ادعم StudyForge ❤️</h2>
+      </div>
+      <button class="modal-close" id="closeSupport" type="button" aria-label="إغلاق">×</button>
+    </div>
+    <p class="support-intro" data-i18n="supportIntro">إذا كنت تحب StudyForge وتريد دعمه، يمكنك المساهمة بالطريقة التي تناسبك.</p>
+    <div class="support-methods">
+      <article class="support-method">
+        <div>
+          <h3 data-i18n="vodafoneTitle">Vodafone Cash</h3>
+          <p class="support-number" dir="ltr">01034244592</p>
+        </div>
+        <button class="btn secondary copy-support" type="button" data-copy="01034244592" data-copy-label="Vodafone Cash" data-i18n="copyNumber">نسخ الرقم</button>
+      </article>
+      <article class="support-method">
+        <div>
+          <h3 data-i18n="instapayTitle">InstaPay</h3>
+          <p class="support-number" dir="ltr">01034244592</p>
+        </div>
+        <button class="btn secondary copy-support" type="button" data-copy="01034244592" data-copy-label="InstaPay" data-i18n="copyNumber">نسخ الرقم</button>
+      </article>
+    </div>
+    <div id="copyToast" class="copy-toast" role="status" aria-live="polite"></div>
+  </div>
+</div>
+
 <footer>
 <span>© 2026 StudyForge PC</span>
 <span><a href="help.html" data-i18n="footerHelp">المساعدة</a> · <a class="email-link" href="mailto:studyforgepc@gmail.com">studyforgepc@gmail.com</a></span>

@@ -1,7 +1,7 @@
 const LANG_KEY="studyforge-language";
 const translations={
   ar:{
-    navHome:"الرئيسية",navDownload:"تحميل",navUpdates:"التحديثات",navHelp:"المساعدة",lang:"EN",
+    navHome:"الرئيسية",navDownload:"تحميل",navUpdates:"التحديثات",navHelp:"المساعدة",supportButton:"دعم StudyForge",supportKicker:"دعم StudyForge",supportModalTitle:"ادعم StudyForge ❤️",supportIntro:"إذا كنت تحب StudyForge وتريد دعمه، يمكنك المساهمة بالطريقة التي تناسبك.",vodafoneTitle:"Vodafone Cash",instapayTitle:"InstaPay",copyNumber:"نسخ الرقم",copySuccess:"تم نسخ الرقم ✅",copyFailed:"تعذر النسخ تلقائيًا، يمكنك تحديد الرقم ونسخه يدويًا.",closeSupport:"إغلاق",lang:"EN",
     homeTitle:"StudyForge PC — برنامج تشغيل وتنظيم الكورسات التعليمية",
     badgeWin:"Windows • v1.0.1",heroTitle:"نظّم كورساتك المحلية",heroSpan:"ببساطة.",
     heroDesc:"StudyForge PC برنامج Windows مجاني لإدارة وتشغيل فيديوهات الكورسات الموجودة على جهازك، مع حفظ تقدم المشاهدة وأدوات تحكم مباشرة داخل مشغل الفيديو.",
@@ -27,7 +27,7 @@ const translations={
     footerHelp:"المساعدة",changelog:"سجل التحديثات",helpBadge:"المساعدة"
   },
   en:{
-    navHome:"Home",navDownload:"Download",navUpdates:"Updates",navHelp:"Help",lang:"AR",
+    navHome:"Home",navDownload:"Download",navUpdates:"Updates",navHelp:"Help",supportButton:"Support StudyForge",supportKicker:"StudyForge Support",supportModalTitle:"Support StudyForge ❤️",supportIntro:"If you enjoy StudyForge and would like to support the project, choose the method that works best for you.",vodafoneTitle:"Vodafone Cash",instapayTitle:"InstaPay",copyNumber:"Copy number",copySuccess:"Number copied ✅",copyFailed:"Automatic copy failed. You can select and copy the number manually.",closeSupport:"Close",lang:"AR",
     homeTitle:"StudyForge PC — Local Course & Video Manager",
     badgeWin:"Windows • v1.0.1",heroTitle:"Organize your local courses",heroSpan:"simply.",
     heroDesc:"StudyForge PC is a free Windows app for managing and playing local course videos, saving watch progress, and using playback controls directly inside the video player.",
@@ -75,9 +75,53 @@ function applyLang(lang){
   localStorage.setItem(LANG_KEY,lang);
 }
 
+function setupSupport(){
+  const modal=document.getElementById("supportModal");
+  const openBtn=document.getElementById("supportBtn");
+  const closeBtn=document.getElementById("closeSupport");
+  const toast=document.getElementById("copyToast");
+  if(!modal || !openBtn) return;
+
+  const open=()=>{
+    modal.hidden=false;
+    modal.setAttribute("aria-hidden","false");
+    document.body.classList.add("modal-open");
+    closeBtn?.focus();
+  };
+  const close=()=>{
+    modal.hidden=true;
+    modal.setAttribute("aria-hidden","true");
+    document.body.classList.remove("modal-open");
+    openBtn.focus();
+  };
+
+  openBtn.addEventListener("click",open);
+  closeBtn?.addEventListener("click",close);
+  modal.querySelectorAll("[data-close-support]").forEach(el=>el.addEventListener("click",close));
+  document.addEventListener("keydown",e=>{ if(e.key==="Escape" && !modal.hidden) close(); });
+
+  modal.querySelectorAll(".copy-support").forEach(btn=>{
+    btn.addEventListener("click",async()=>{
+      const value=btn.getAttribute("data-copy")||"";
+      try{
+        await navigator.clipboard.writeText(value);
+        if(toast){ toast.textContent=translations[document.documentElement.lang]?.copySuccess||"Number copied ✅"; }
+      }catch{
+        if(toast){ toast.textContent=translations[document.documentElement.lang]?.copyFailed||"Copy failed"; }
+      }
+      if(toast){
+        toast.classList.add("show");
+        clearTimeout(window.__copyToastTimer);
+        window.__copyToastTimer=setTimeout(()=>toast.classList.remove("show"),2200);
+      }
+    });
+  });
+}
+
 document.addEventListener("DOMContentLoaded",()=>{
   const saved=localStorage.getItem(LANG_KEY);
   applyLang(saved || (document.documentElement.lang==="en"?"en":"ar"));
   const btn=document.getElementById("lang");
   if(btn) btn.addEventListener("click",()=>applyLang(document.documentElement.lang==="ar"?"en":"ar"));
+  setupSupport();
 });
