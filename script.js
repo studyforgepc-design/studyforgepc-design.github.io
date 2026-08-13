@@ -1,7 +1,7 @@
 const LANG_KEY="studyforge-language";
 const translations={
   ar:{
-    navHome:"الرئيسية",navDownload:"تحميل",navUpdates:"التحديثات",navHelp:"المساعدة",supportButton:"دعم StudyForge",supportKicker:"دعم StudyForge",supportModalTitle:"ادعم StudyForge ❤️",supportIntro:"إذا كنت تحب StudyForge وتريد دعمه، يمكنك المساهمة بالطريقة التي تناسبك.",vodafoneTitle:"Vodafone Cash",vodafoneQrHelp:"امسح رمز QR للدعم",vodafoneQrAlt:"رمز QR لدعم StudyForge عبر Vodafone Cash",instapayTitle:"InstaPay",copyNumber:"نسخ الرقم",copySuccess:"تم النسخ ✅",copyFailed:"تعذر النسخ تلقائيًا.",closeSupport:"إغلاق",lang:"EN",
+    navHome:"الرئيسية",navDownload:"تحميل",navUpdates:"التحديثات",navHelp:"المساعدة",supportButton:"دعم StudyForge",supportKicker:"دعم StudyForge",supportModalTitle:"ادعم StudyForge ❤️",supportIntro:"يمكنك دعم StudyForge عبر Vodafone Cash. ❤️",vodafoneTitle:"Vodafone Cash",vodafoneQrHelp:"امسح رمز QR للدعم",vodafoneQrNote:"يحتوي هذا الرمز على رقم Vodafone Cash الخاص بالدعم.",vodafoneQrAlt:"رمز QR لدعم StudyForge عبر Vodafone Cash",instapayTitle:"InstaPay",copyNumber:"نسخ الرقم",copySuccess:"تم النسخ ✅",copyFailed:"تعذر النسخ تلقائيًا.",closeSupport:"إغلاق",lang:"EN",
     homeTitle:"StudyForge PC — برنامج تشغيل وتنظيم الكورسات التعليمية",
     badgeWin:"Windows • v1.0.1",heroTitle:"نظّم كورساتك المحلية",heroSpan:"ببساطة.",
     heroDesc:"StudyForge PC برنامج Windows مجاني لإدارة وتشغيل فيديوهات الكورسات الموجودة على جهازك، مع حفظ تقدم المشاهدة وأدوات تحكم مباشرة داخل مشغل الفيديو.",
@@ -27,7 +27,7 @@ const translations={
     footerHelp:"المساعدة",changelog:"سجل التحديثات",helpBadge:"المساعدة"
   },
   en:{
-    navHome:"Home",navDownload:"Download",navUpdates:"Updates",navHelp:"Help",supportButton:"Support StudyForge",supportKicker:"StudyForge Support",supportModalTitle:"Support StudyForge ❤️",supportIntro:"If you enjoy StudyForge and would like to support the project, choose the method that works best for you.",vodafoneTitle:"Vodafone Cash",vodafoneQrHelp:"Scan the QR code to support StudyForge",vodafoneQrAlt:"StudyForge Vodafone Cash support QR code",instapayTitle:"InstaPay",copyNumber:"Copy number",copySuccess:"Number copied ✅",copyFailed:"Automatic copy failed.",closeSupport:"Close",lang:"AR",
+    navHome:"Home",navDownload:"Download",navUpdates:"Updates",navHelp:"Help",supportButton:"Support StudyForge",supportKicker:"StudyForge Support",supportModalTitle:"Support StudyForge ❤️",supportIntro:"You can support StudyForge via Vodafone Cash. ❤️",vodafoneTitle:"Vodafone Cash",vodafoneQrHelp:"Scan the QR code to support StudyForge",vodafoneQrNote:"This QR code contains the Vodafone Cash support number.",vodafoneQrAlt:"StudyForge Vodafone Cash support QR code",instapayTitle:"InstaPay",copyNumber:"Copy number",copySuccess:"Number copied ✅",copyFailed:"Automatic copy failed.",closeSupport:"Close",lang:"AR",
     homeTitle:"StudyForge PC — Local Course & Video Manager",
     badgeWin:"Windows • v1.0.1",heroTitle:"Organize your local courses",heroSpan:"simply.",
     heroDesc:"StudyForge PC is a free Windows app for managing and playing local course videos, saving watch progress, and using playback controls directly inside the video player.",
