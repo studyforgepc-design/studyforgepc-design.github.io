@@ -1,9 +1,12 @@
 {
-  "name":"StudyForge PC",
-  "short_name":"StudyForge",
-  "start_url":"/",
-  "display":"standalone",
-  "background_color":"#080c12",
-  "theme_color":"#080c12",
-  "icons":[{"src":"/studyforge.png","sizes":"256x256","type":"image/png"}]
+  "name": "StudyForge PC",
+  "short_name": "StudyForge",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080c12",
+  "theme_color": "#080c12",
+  "icons": [
+    {"src": "/favicon.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"},
+    {"src": "/favicon.ico", "sizes": "16x16 32x32 48x48 64x64 128x128 256x256 512x512", "type": "image/x-icon"}
+  ]
 }
